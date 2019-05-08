@@ -1,8 +1,9 @@
 require_relative 'config/environment'
 require 'sinatra/activerecord/rake'
+require 'dotenv/tasks'
 
 desc 'starts a console'
-task :console do
+task console: :dotenv do
   ActiveRecord::Base.logger = Logger.new(STDOUT)
   Pry.start
 end
