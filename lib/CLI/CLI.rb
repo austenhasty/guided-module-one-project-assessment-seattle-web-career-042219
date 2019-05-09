@@ -1,7 +1,4 @@
 module CLI
-  name = ""
-  location = ""
-
   def self.get_name
     puts "Please enter your full name:"
     gets.chomp
@@ -27,6 +24,5 @@ module CLI
     name = get_name
 
     name_in_database?(name) ? puts("Hello #{name}") : fill_profile(name)
-    binding.pry
   end
 end
