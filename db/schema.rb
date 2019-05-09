@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_05_07_234417) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "location"
   end
 
   create_table "visits", force: :cascade do |t|
