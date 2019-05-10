@@ -31,7 +31,18 @@ Run the program by typing: `ruby bin/run.rb`
 
 <img src="https://raw.githubusercontent.com/austenhasty/guided-module-one-project-assessment-seattle-web-career-042219/f305ac4ab37d206689961e1408c8f9a129139692/assets/explain_program.gif" width="400">
 
+On start user is given prompt to enter their name.
+If you have used app before, you jump right into the questions.
+If not, we ask for your address(Specific addresses help with search)
+- use format "Street address, City, State, Zipcode for best results.
 
+Three questions are asked, with Three choices each.
+- Question 1 is about price.
+- Question 2 is about distance you want to travel.
+- Question 3 gives more freedom but 
+ 1. gives you a random selection from your previously visited. 
+ 2. gives you a random selection based on the previous 2 questions
+ 3. lets you enter a string of a food you love and we do our best to get a restaurant that has that food and matches your previous criteria.
 ## CREDITS
 
 This product was created by @jkvyff and @austenhasty
