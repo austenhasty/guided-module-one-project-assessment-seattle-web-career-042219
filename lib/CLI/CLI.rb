@@ -49,8 +49,13 @@ module CLI
   end
 
   def self.choices_to_api_call(user_id, ans1, ans2, ans3)
-    ans1 = ans1.to_s
-    ans1 == '3' ? ans1 = '3, 4' : ans1
+    if [1, 2, 3].include?(ans1)
+      ans1 = ans1.to_s
+      ans1 == '3' ? ans1 = '3, 4' : ans1
+    else
+      ans1 = '1, 2, 3, 4'
+    end
+
     case ans2
     when '1'
       ans2 = 5000
@@ -58,6 +63,8 @@ module CLI
       ans2 = 10000
     when '3'
       ans2 = 20000
+    else 
+      ans2 = 10000
     end
 
     user_loc = User.find(user_id)[:location]
@@ -79,6 +86,7 @@ module CLI
 
   def self.print_restaurant(rest_hash)
     system "clear"
+
     val = 110
     13.times do puts end
     puts "Name: #{rest_hash["name"]}".center(val)
@@ -114,7 +122,12 @@ module CLI
     ans3 = ask_question(3)
     
     rest_json = choices_to_api_call(user_id, ans1, ans2, ans3)
-    print_restaurant(rest_json)
-    save_restaurant(user_id, rest_json)
+
+    if rest_json == nil 
+      puts("Search distance too specific for selection, try again.")
+    else
+      print_restaurant(rest_json)
+      save_restaurant(user_id, rest_json)
+    end
   end
 end
