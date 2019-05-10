@@ -7,9 +7,9 @@ Data provided by https://www.yelp.com/
 
 ## Installation and Setup
 
-1. Make sure Ruby is installed in your terminal 
+1. Make sure Ruby is installed in your terminal
   * `ruby -v` will tell you what version you have installed
-  
+
 2. Fork and clone the repository from https://github.com/austenhasty/guided-module-one-project-assessment-seattle-web-career-042219
 
 3. Aquire a key for the Yelp Fusion API from: https://www.yelp.com/developers/documentation/v3/authentication (follow the steps on the website)
@@ -20,7 +20,7 @@ Data provided by https://www.yelp.com/
 5. Run these commands in your terminal
 * `bundle install` to install gems
 * `rake db:migrate` to set up the database
-* `ruby db/seeds.rb` to seed the database
+* `rake seed` to seed the database
 
 
 ## RUNNING THE PROGRAM
