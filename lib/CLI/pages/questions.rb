@@ -41,10 +41,10 @@ def q2_page
 
           *-------------------*            *-------------------*            *-------------------*
           |                   |            |                   |            |                   |
-          |                   |            |                   |            |                   |
-          |                   |            |                   |            |                   |
-          |       Walk        |            |        Bike       |            |       Drive       |
-          |                   |            |                   |            |                   |
+          |                   |            |                   |            |      ______       |
+          |     ..^____/      |            |         __o       |            |     /|_||_|`.__   |
+          |    `-. ___ )      |            |       _{,<_       |            |    (   _    _ _|  |
+          |      ||  ||       |            |      (_)/(_)      |            |    =`-(_)--(_)-'  |
           |                   |            |                   |            |                   |
           |                   |            |                   |            |                   |
           *-------------------*            *-------------------*            *-------------------*
@@ -53,7 +53,9 @@ def q2_page
 
 Answer: "
 end
-
+# Dog art by Maija Haavisto From https://www.asciiart.eu/animals/dogs
+# Bike art From https://www.asciiart.eu/sports-and-outdoors/cycling
+# Car art by Hayley Jane From https://www.asciiart.eu/vehicles/cars
 def q3_page
 "
 

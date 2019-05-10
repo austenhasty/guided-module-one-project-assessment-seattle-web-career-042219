@@ -88,7 +88,19 @@ module CLI
     puts "Phone: #{rest_hash["phone"]}".center(val)
     puts
     puts "URL: #{rest_hash["url"]}".center(val)
-    13.times do puts end
+    6.times do puts end
+  end
+
+  def self.save_restaurant(user_id, rest_hash)
+    puts "Do you wish to save #{rest_hash["name"]} to your visits?".center(110)
+    puts
+    print "Type 's' to save or 'q' to quit: ".rjust(70)
+    input = gets.chomp
+    if input == "s" || input == "save"
+      new_rest = Restaurant.create(name: rest_hash["name"], cost: rest_hash["price"], yelp_id: rest_hash["id"])
+      Visit.create(user_id: user_id, restaurant_id: new_rest[:id])
+    end
+    system "clear"
   end
 
   def self.run_app
@@ -103,5 +115,6 @@ module CLI
     
     rest_json = choices_to_api_call(user_id, ans1, ans2, ans3)
     print_restaurant(rest_json)
+    save_restaurant(user_id, rest_json)
   end
 end
