@@ -16,9 +16,7 @@ Data provided by https://www.yelp.com/
 
 4. Using your Yelp Api key make a .env file as shown, but replace the blank with your api key
 
-5. Make a .env file that
-
-6. Run these commands in your terminal
+5. Run these commands in your terminal
 * `bundle install` to install gems
 * `rake db:migrate` to set up the database
 * `ruby db/seeds.rb` to seed the database
