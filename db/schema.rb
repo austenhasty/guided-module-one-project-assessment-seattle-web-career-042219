@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_05_07_234417) do
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.string "cost"
+    t.string "yelp_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -34,7 +35,6 @@ ActiveRecord::Schema.define(version: 2019_05_07_234417) do
   create_table "visits", force: :cascade do |t|
     t.integer "user_id"
     t.integer "restaurant_id"
-    t.datetime "date_time"
   end
 
 end
