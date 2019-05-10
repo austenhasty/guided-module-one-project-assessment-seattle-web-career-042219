@@ -1,16 +1,17 @@
-YELP_API = "https://api.yelp.com/v3/businesses/"
-
-DEF_LOCATION = "Seattle,WA"
-DEF_NUM_RETURNED = 5
-DEF_RADIUS = 5000
-
 class YelpApi
-	def self.search(location, term, radius = DEF_RADIUS)
+	YELP_API = "https://api.yelp.com/v3/businesses/"
+
+	DEF_LOCATION = "Seattle,WA"
+	DEF_NUM_RETURNED = 5
+	DEF_RADIUS = 5000
+
+	def self.search(location, term, price = 1, radius = DEF_RADIUS)
 		url = "#{YELP_API}search"
 		params = {
 			term: term,
 			location: location,
 			radius: radius,
+			price: price,
 			limit: DEF_NUM_RETURNED
 		}
 

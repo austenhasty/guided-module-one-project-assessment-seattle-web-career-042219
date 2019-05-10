@@ -1,3 +1,4 @@
 require_relative '../config/environment'
 
-CLI.welcome
+CLI.run_app
+
