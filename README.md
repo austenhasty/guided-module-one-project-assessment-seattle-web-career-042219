@@ -1,3 +1,36 @@
+FOODME
+
+FOODME is a Ruby-based CLI program meant to be the answer to the age old question, "What do you want for dinner?"
+No need to ask that question ever again! Now FOODME can tell you exactly what you want in just a matter minutes!
+
+Data provided by Yelp.com
+
+RUNNING THE PROGRAM
+
+In order to make sure everything runs smoothly, please make sure you have a couple things:
+-Make sure Ruby is installed in your
+-Fork and clone the repository from https://github.com/austenhasty/guided-module-one-project-assessment-seattle-web-career-042219
+-Run Bundle Install
+-Aquire a key for the Yelp Fusion API from: https://www.yelp.com/developers/documentation/v3/authentication
+(follow the steps on the website)
+-Run the program by typing: ruby bin/run.rb
+
+
+CREDITS
+This product was created by Jens Vyff and Austen Hasty
+
+Gems: source "https://rubygems.org"
+
+  gem 'dotenv'
+  gem "sinatra-activerecord"
+  gem "sqlite3"
+  gem "pry"
+  gem "require_all"
+  gem "faker"
+  gem "http"
+  gem 'activerecord-import'
+
+
 Module One Final Project
 ========================
 
