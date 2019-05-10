@@ -15,7 +15,7 @@ Data provided by https://www.yelp.com/
 3. Aquire a key for the Yelp Fusion API from: https://www.yelp.com/developers/documentation/v3/authentication (follow the steps on the website)
 
 4. Using your Yelp Api key make a .env file as shown, but replace the blank with your api key
-<img src="lib/env_example.png" width="300">
+<img src="https://raw.githubusercontent.com/austenhasty/guided-module-one-project-assessment-seattle-web-career-042219/f305ac4ab37d206689961e1408c8f9a129139692/assets/env_example.png" width="300">
 
 5. Run these commands in your terminal
 * `bundle install` to install gems
@@ -28,6 +28,8 @@ Data provided by https://www.yelp.com/
 In order to make sure everything runs smoothly, please make sure you have a couple things:
 
 Run the program by typing: `ruby bin/run.rb`
+
+<img src="https://raw.githubusercontent.com/austenhasty/guided-module-one-project-assessment-seattle-web-career-042219/f305ac4ab37d206689961e1408c8f9a129139692/assets/explain_program.gif" width="400">
 
 
 ## CREDITS
