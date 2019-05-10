@@ -3,7 +3,7 @@ class Category < ActiveRecord::Base
   has_many :restaurant_categories
 
   def self.rand_cat
-  	Category.order("RANDOM()").first
+  	Category.order(Arel.sql("RANDOM()")).first
   end	
 
 end
