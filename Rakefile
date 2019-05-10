@@ -24,7 +24,7 @@ task :seed do
   Visit.create(user_id: 2, restaurant_id: 3)
 
   category_col = [ :title ]
-  category_cntry = [['American'], ['Australian'], ['Brazilian'], ['Canadian'], ['Chinese'], ['English'], ['French'], ['German'], ['Indian'], ['Italian'], ['Japanese'], ['Korean'], ['Pakistani'], ['Scottish'], ['South African'], ['Sri Lankan'], ['United Kingdom'], ['Vietnamese']]
+  category_cntry = [['American'], ['Australian'], ['Brazilian'], ['Canadian'], ['Chinese'], ['English'], ['French'], ['German'], ['Indian'], ['Italian'], ['Japanese'], ['Korean'], ['Scottish'], ['United Kingdom'], ['Vietnamese']]
   	# From "https://en.wikipedia.org/wiki/Category:Lists_of_foods"
   Category.import category_col, category_cntry
   puts "seed complete"
